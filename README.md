@@ -1,35 +1,26 @@
-
 # Smart Expense Tracker
 
-A Python-based expense tracking application built using Object-Oriented Programming (OOP).
+A command-line Python application for modelling income and expense transactions with object-oriented programming. It calculates totals, maintains an in-memory transaction history, and prints a financial summary.
 
 ## Features
-- Add income and expense transactions
-- Validate transaction amounts and text inputs
-- Calculate total income
-- Calculate total expenses
-- Calculate current wallet balance
-- Display transaction history
-- Generate financial summaries
-- Handle invalid inputs using exception handling
 
-## Technologies Used
-- Python 3
-- Git
-- GitHub
+- Create income and expense transactions.
+- Validate positive transaction amounts and non-empty descriptions.
+- Add and display wallet transactions.
+- Calculate total income, total expenses, and current balance.
+- Print a simple financial summary.
+- Demonstrate Python special methods such as `__len__`, `__getitem__`, `__contains__`, and `__str__`.
 
-## OOP Concepts Implemented
-- Classes and Objects
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Abstraction
-- Composition
-- Static Methods
-- Class Methods
-- Magic (Dunder) Methods
+## OOP concepts
 
-## Project Structure
+- Abstract base class and inheritance
+- Encapsulation through a validated amount property
+- Method overriding and polymorphism
+- Composition (Wallet contains transactions)
+- Static and class methods
+- Dunder methods
+
+## Project structure
 
 ```text
 smart-expense-tracker/
@@ -37,37 +28,23 @@ smart-expense-tracker/
 ├── transaction.py
 ├── wallet.py
 ├── reports.py
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
-## How to Run
-
-1. Clone the repository:
+## Run locally
 
 ```bash
 git clone https://github.com/sai-manikanta-kadali/smart-expense-tracker.git
-```
-
-2. Navigate into the project:
-
-```bash
 cd smart-expense-tracker
-```
-
-3. Run the application:
-
-```bash
 python3 main.py
 ```
 
-## Future Improvements
-- Save transactions using JSON or CSV
-- Add transaction deletion and editing
-- Generate monthly expense reports
-- Add a graphical user interface
+No external dependencies are required.
 
-## Author
-Sai Manikanta
+## Current scope
 
-**Project Version:** 1.0
+Transactions are stored in memory and reset when the program exits. This project does not yet include a database, recurring transactions, authentication, or a graphical interface. It is an OOP learning project rather than a financial product.
+
+---
+
+Built to practise Python classes, validation, composition, and maintainable program structure.
